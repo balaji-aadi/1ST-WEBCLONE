@@ -1,0 +1,881 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Uchen', serif;
+    --font_h:'Montserrat',sans-serif;
+    --font_p:'Open Sans Condensed',sans-serif;
+    --font_size: 5rem;
+    --font_weigh:700;
+}
+:root{
+    --color:white;
+
+}
+h1{
+    font-family: var(--font_h);
+    font-size: var(--font_size);
+    font-weight: var(--font_weigh);
+}
+p{
+    font-family: var(--font_p);
+}
+h1,h2,p{
+    color: var(--color);
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+    color: var(--color);
+}
+button{
+    padding: 1rem 2rem;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-size: medium;
+    font-weight: 500;
+    color: #89216B;
+    transition: 0 2s;
+}
+button:hover{
+    background-color: red;
+    color: white;
+}
+/* ********************************* */
+header{
+    width: 100vw;
+    height: 150vh;
+    background-image: url('background.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    height: 12rem;
+    font-size: 1.4rem;
+}
+header nav .ham{
+    display: none;
+}
+.navbar_top{
+    padding-bottom: 8rem;
+    margin-right: 2rem;
+    
+}
+.navbar_top ul{
+    display: flex;
+}
+.tags{
+    color: tomato;
+}
+.navbar_top ul li{
+    padding-right: 4rem;
+    transition: all  linear 0.5s;
+}
+.navbar_top ul li:hover{
+    color: tomato;
+}
+
+.logo{
+    padding: 7rem ;
+    margin: 2rem;
+    padding-top: 3rem;
+}
+
+.main_hero{
+    justify-content: center;
+    display: block;
+    align-items: center;
+    padding: 3rem;
+}
+.hero_left h1{
+    width: 33rem;
+    line-height: 5rem;
+    padding-bottom: 5rem;
+   
+  
+}
+
+.hero_left p{
+    width: 40rem;
+    line-height: 2.5rem;
+    position: relative;
+    right: 8rem;
+    padding-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 200;
+}
+/* *********************************************************** */
+.about_sec{
+     width: 100vw;
+     height: 140vh;
+     background-image: url('about1.jpg');
+     background-attachment: fixed;
+     background-position: top;
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+.about_div h1{
+    padding: 10rem;
+    padding-bottom: 4rem;
+    color: grey;
+    display: inline-block;
+}
+.about_div p{
+   padding-left: 10rem;
+    width: 40rem;
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 1.4rem;
+
+}
+.container{
+    display: flex;
+}
+.about_div .p1{
+    padding-left: 10rem;
+    width: 23rem;
+    font-size: 1rem;
+    font-weight: 200;
+    text-align: left;
+    padding-top: 1rem;
+
+}
+.about_div .p2{
+    padding-top: 1rem;
+    width: 15rem;
+    font-size: 1rem;
+    font-weight: 400;
+padding-left: 2rem;
+}
+button{
+    margin: 2rem 10rem;
+}
+/* ***************************************************** */
+.service_sec{
+    width: 100vw;
+    height: 170vh;
+    background-image: url('service1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.service_div{
+    width: 100vw;
+    padding: 7rem;
+    display: inline-block;
+    padding-left: 45rem;
+    
+}
+.service_div h1{
+    position: relative;
+    right: 10rem;
+    padding: 2rem;
+    padding-bottom:4rem ;
+    margin: 2rem;
+   width: 30rem;
+   height: 6rem;
+}
+
+.service_div img{
+    position: relative;
+    right: 12rem;
+    top: 4rem;
+}
+.container_sec{
+    padding-left: 5rem;
+}
+.container_sec h2{
+    position: relative;
+    right: 6rem;
+}
+.container_sec p{
+    position: relative;
+    right: 15rem;
+    width: 36rem;
+    line-height: 1.2rem;
+}
+.butt{
+    position: relative;
+    margin-left: 30rem;
+    bottom: 4rem;
+}
+
+.barbers{
+    width: 100vw;
+    height: 200vh;
+    background-image: url('black_back.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.barber_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 10rem;
+    padding-bottom: 5rem;
+}
+.barber_div{
+    padding: 2rem;
+   
+}
+.barber_div h1{
+    padding-top: 4rem;
+    padding-left: 7rem;
+}
+.barber_div p{
+    padding-top: 3rem;
+    width: 70rem;
+    line-height: 3rem;
+    font-size: 2rem;
+}
+.barber_container h2,p{
+    padding-left: 8rem;
+    width: 25rem;
+    line-height: 2rem;
+}
+.barber_container img{
+    position: relative;
+    left: 6rem;
+   
+}
+.contact_sec{
+    width: 100vw;
+    height: 70vh;
+    background-image: url('contact.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contact_div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15rem;
+    padding-right: 8rem;
+    
+}
+.contact_div h2{
+    position: relative;
+    right: 15rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    left: 1.5rem;
+    color: black;
+    padding-left: 6rem;
+    
+}
+.contact_div p{
+    
+    font-size: var(--font_p);
+    line-height: 2rem;
+    position: relative;
+    right: 15rem;
+    left: 0.2rem;
+   
+}
+.contact_div .icons{
+    bottom: 2rem;
+    position: relative;
+    width: 25rem;
+    position: relative;
+    right: 15rem;
+}
+.contact_div .icons_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    position: relative;
+    right: 15rem;
+}
+.contact_div .icons_container a{
+    position: relative;
+    left: 15rem;
+    width: 3rem;
+    font-size: 2rem;
+}
+footer{
+    display: flex;
+    background-color: black;
+    height: 10rem;
+    align-items: center;
+    justify-content: center;
+}
+footer{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+footer p{
+    width: 50vw;
+}
+
+/* ************************************************😀😀😁😊😍😍🤗😘🤑😀*********************************************************************************************************************************** */
+
+ @media(max-width:770px){
+          header,.main_hero,.service_div{
+              padding: 1rem 1rem;
+          }
+          header{
+              
+              height: 100vh;
+          }
+          header nav .ham{
+            display: flex;
+            position:absolute;
+            cursor: pointer;
+            right: 3rem;
+            top: 4.5rem;
+            background-color: red;
+            width: 2.2rem;
+            height: 2.2rem;
+            justify-content: center;
+            align-items: center;
+        }
+
+        body{
+            --font_size:1.2rem;
+            --font_weight:200;
+            --width:22rem;
+        }
+        h1,p{
+            font-size: var(--font_size);
+            font-weight: var(--font_weight);
+            width: var(--width);
+        }
+    .navbar_top{
+        display: none;
+        background: tomato;
+        height: 100vh;
+        width: 50%;
+        flex-direction: column;
+        transition: all 1s ease-out;
+        
+    }
+    .main_hero{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        height: 80vh;
+        flex-flow: column;
+    }
+  
+    .hero_left h1{
+        padding: 0;
+        font-size: 2rem;
+        width: 15rem;
+        line-height: 2rem;
+       padding-bottom: 2rem;
+    }
+    .hero_left p{
+        padding: 0;
+        width: 20rem;
+        font-size: 1rem;
+        font-weight: 200;
+        line-height: 1.4rem;
+        padding-bottom: 2rem;
+    }
+    header nav .logo{
+        width: 100%;
+        padding: 0 ;
+        margin: 0;
+        padding-right: 8rem;
+        padding-bottom: 6rem;
+    }
+.main_hero .hero_left button{
+    margin: 0;
+    padding: 1rem;
+}
+
+
+/* ************************************************************** */
+ .container{
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+   
+}
+.about_div h1{
+    padding: 1rem;
+    padding-top: 4rem;
+    font-size: 2rem;
+}
+.about_div p{
+    padding-left: 1rem;
+     width: 22rem;
+     font-size: 1.2rem;
+     font-weight: 200;
+     line-height: 1.5rem;
+ 
+ }
+ .about_div .p1 {
+     width: 22rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+.about_div .p2 {
+    padding-top: 1rem;
+    width: 22rem;
+    font-size: 1.2rem;
+    font-weight: 200;
+    padding-left: 1rem;
+}
+.about_sec .about_div button{
+    margin: 1rem;
+    padding: 1rem;
+}
+
+/* ************************************************************** */
+
+ .service_sec{ 
+     height: 145vh;
+    background-position: left;
+}
+.service_div{
+    width: 0rem;
+}
+.service_div h1 {
+    padding: 0rem;   
+    padding-top: 2rem;
+    font-size: 3rem;
+    margin: 0rem;
+    width: 20rem;
+}
+
+.container_sec{
+    padding: 0rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: column;
+}
+
+.service_div img {
+    position: relative;
+    padding-bottom: 2rem;
+    top: 1rem;
+    left: 2rem;
+    font-size: 2rem;
+    width: 4rem;
+}
+.container_sec h2{
+    width: 15rem;
+
+}
+.container_sec p {
+    width: 20rem;
+    line-height: 1.5rem;
+}
+.butt{
+    margin: 0rem;
+}
+.butt button{
+    position: relative;
+    right: 9rem;
+    width: 12rem;
+}
+/* ************************************************** */
+
+.barbers{ 
+    height: 274vh;
+}
+.barber_div {
+    padding: 0rem;
+    padding-left: 1rem;
+}
+.barber_div h1 {
+    padding-top: 4rem;
+    font-size: 3rem;
+    position: relative;
+    right: 0rem;
+}
+
+.barber_div p {
+    padding-top: 2rem;
+    width: 20rem;
+    line-height: 1.5rem;
+    position: relative;
+    right: 0rem;
+    font-size: 1.2rem;
+}
+.barber_container h2{
+    position: relative;
+    right: 0rem;
+}
+.barber_container p{
+    position: relative;
+    right: 0rem;
+    width: 18rem;
+}
+
+.barber_container {
+    width: 96vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    position: relative;
+    bottom: 10rem;
+    left: 1rem;
+}
+.barber_container img{
+    width: 20rem;
+    position: relative;
+    right: 2rem;
+}
+
+
+/* *************************************************************************** */
+
+.contact_sec{
+    height:85vh;
+}
+.contact_div{ 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+.contact_div h2 {
+    width: 27rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: white;
+} 
+.contact_div p {
+    width: 16rem;
+}
+.contact_div .para {
+    width: 19rem;
+}
+.first_div{
+    padding-bottom: 2rem;
+}
+.second_div{
+    padding-bottom: 2rem;
+}
+.third_div{
+    padding-bottom: 2rem;
+}
+.icons_container a{
+    width: 5rem;
+    position: relative;
+    right: 7rem;
+    
+}
+/* ******************************************************** */
+
+footer  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem;
+    padding-bottom: 0rem;
+    
+}
+footer p{
+    width: 60vw;
+    font-size: 1rem;
+}
+}
+
+/* ********************************************************************😀😀😀😀😀😀😀😀😚😍*************************************************************************************************************😀 */
+
+
+@media(max-width:980px){
+
+}
+
+@media(max-width:1280){
+
+}
+
+
+@media(max-width:544px){
+        header,.main_hero,.service_div{
+            padding: 1rem 1rem;
+        }
+        header{
+            
+            height: 100vh;
+        }
+        header nav .ham{
+          display: flex;
+          position:absolute;
+          cursor: pointer;
+          right: 3rem;
+          top: 4.5rem;
+          background-color: red;
+          width: 2.2rem;
+          height: 2.2rem;
+          justify-content: center;
+          align-items: center;
+      }
+
+      body{
+          --font_size:1.2rem;
+          --font_weight:200;
+          --width:22rem;
+      }
+      h1,p{
+          font-size: var(--font_size);
+          font-weight: var(--font_weight);
+          width: var(--width);
+      }
+  .navbar_top{
+      display: none;
+      background: tomato;
+      height: 100vh;
+      width: 50%;
+      flex-direction: column;
+      transition: all 1s ease-out;
+      
+  }
+  .main_hero{
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 100%;
+      height: 80vh;
+      flex-flow: column;
+  }
+
+  .hero_left h1{
+      padding: 0;
+      font-size: 2rem;
+      width: 15rem;
+      line-height: 2rem;
+     padding-bottom: 2rem;
+  }
+  .hero_left p{
+      padding: 0;
+      width: 20rem;
+      font-size: 1rem;
+      font-weight: 200;
+      line-height: 1.4rem;
+      padding-bottom: 2rem;
+  }
+  header nav .logo{
+      width: 100%;
+      padding: 0 ;
+      margin: 0;
+      padding-right: 8rem;
+      padding-bottom: 6rem;
+  }
+.main_hero .hero_left button{
+  margin: 0;
+  padding: 1rem;
+}
+
+
+/* ************************************************************** */
+.container{
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+ 
+}
+.about_div h1{
+  padding: 1rem;
+  padding-top: 4rem;
+  font-size: 2rem;
+}
+.about_div p{
+  padding-left: 1rem;
+   width: 22rem;
+   font-size: 1.2rem;
+   font-weight: 200;
+   line-height: 1.5rem;
+
+}
+.about_div .p1 {
+   width: 22rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+.about_div .p2 {
+  padding-top: 1rem;
+  width: 22rem;
+  font-size: 1.2rem;
+  font-weight: 200;
+  padding-left: 1rem;
+}
+.about_sec .about_div button{
+  margin: 1rem;
+  padding: 1rem;
+}
+
+/* ************************************************************** */
+
+.service_sec{ 
+   height: 145vh;
+  background-position: left;
+}
+.service_div{
+  width: 0rem;
+}
+.service_div h1 {
+  padding: 0rem;   
+  padding-top: 2rem;
+  font-size: 3rem;
+  margin: 0rem;
+  width: 20rem;
+}
+
+.container_sec{
+  padding: 0rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: column;
+}
+
+.service_div img {
+  position: relative;
+  padding-bottom: 2rem;
+  top: 1rem;
+  left: 2rem;
+  font-size: 2rem;
+  width: 4rem;
+}
+.container_sec h2{
+  width: 15rem;
+
+}
+.container_sec p {
+  width: 20rem;
+  line-height: 1.5rem;
+}
+.butt{
+  margin: 0rem;
+}
+.butt button{
+  position: relative;
+  right: 9rem;
+  width: 12rem;
+}
+/* ************************************************** */
+
+.barbers{ 
+  height: 274vh;
+}
+.barber_div {
+  padding: 0rem;
+  padding-left: 1rem;
+}
+.barber_div h1 {
+  padding-top: 4rem;
+  font-size: 3rem;
+  position: relative;
+  right: 0rem;
+}
+
+.barber_div p {
+  padding-top: 2rem;
+  width: 20rem;
+  line-height: 1.5rem;
+  position: relative;
+  right: 0rem;
+  font-size: 1.2rem;
+}
+.barber_container h2{
+  position: relative;
+  right: 0rem;
+}
+.barber_container p{
+  position: relative;
+  right: 0rem;
+  width: 18rem;
+}
+
+.barber_container {
+  width: 96vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  position: relative;
+  bottom: 10rem;
+  left: 1rem;
+}
+.barber_container img{
+  width: 20rem;
+  position: relative;
+  right: 2rem;
+}
+
+
+/* *************************************************************************** */
+
+.contact_sec{
+  height:85vh;
+}
+.contact_div{ 
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+.contact_div h2 {
+  width: 27rem;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: white;
+} 
+.contact_div p {
+  width: 16rem;
+}
+.contact_div .para {
+  width: 19rem;
+}
+.first_div{
+  padding-bottom: 2rem;
+}
+.second_div{
+  padding-bottom: 2rem;
+}
+.third_div{
+  padding-bottom: 2rem;
+}
+.icons_container a{
+  width: 5rem;
+  position: relative;
+  right: 7rem;
+  
+}
+/* ******************************************************** */
+
+footer  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0rem;
+  padding-bottom: 0rem;
+  
+}
+footer p{
+  width: 60vw;
+  font-size: 1rem;
+}
+}
+
